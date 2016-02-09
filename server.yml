@@ -1,5 +1,5 @@
 ---
-- hosts: all
-  sudo:yes
-  roles:
-   - users
+ - hosts: all
+   sudo: yes
+   roles:
+    - nginx
