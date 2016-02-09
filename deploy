@@ -1,0 +1,2 @@
+[webservers]
+web01.lab.gjellestad.net ansible_user=deploy
