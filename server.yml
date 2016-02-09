@@ -1,5 +1,5 @@
 ---
  - hosts: all
-   become: sudo
+   become: yes
    roles:
     - users
