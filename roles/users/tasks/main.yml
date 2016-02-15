@@ -2,6 +2,5 @@
 - name: Create admin user
   user: name=admin password="{{ admin_password }}" groups=sudo shell="/bin/bash"
 
-
 - name: Add admin authorized key
   authorized_key: user=admin key="{{ shared_public_key }}" state=present
