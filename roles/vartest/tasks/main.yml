@@ -1,6 +1,6 @@
 ---
 - name: Test of host vars
-  file: path=/home/{{ ansible_user }}/{{ item.key }} state=directory
+  file: path=/home/{{ ansible_user }}/{{ item.name }} state=directory
   with_dict: "{{ directories }}"
   
 - name: Copy text files with nested variables
