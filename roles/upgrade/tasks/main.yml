@@ -1,3 +1,6 @@
 ---
+- name: Update system
+  apt: update_cache=yes cache_valid=3600
+
 - name: Upgrade system
-  apt: upgrade=dist update_cache=yes cache_valid=3600
+  apt: upgrade=dist
