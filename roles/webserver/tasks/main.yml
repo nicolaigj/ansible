@@ -10,6 +10,6 @@
   
 - name: Pull site from git
   git:
-    repo={{ sites.value.repo }}
+    repo={{ item.value.repo }}
     dest=/usr/share/nginx/{{ item.key }}
   with_dict: "{{ sites }}"
