@@ -1,0 +1,3 @@
+---
+- name: Installs Nginx with the latest version.
+  apt: name=nginx-full state=latest
