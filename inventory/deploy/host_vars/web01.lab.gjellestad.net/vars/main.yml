@@ -4,3 +4,8 @@ directories:
     name: test11
   test2:
     name: test22
+    
+sites:
+  gjellestad.net:
+    site: gjellestad.net
+    repo: https://github.com/nicolaigj/gjellestad.git
