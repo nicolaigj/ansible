@@ -2,3 +2,9 @@
 - name: Test of host vars
   file: path=/home/{{ ansible_user }}/{{ item.key }} state=directory
   with_dict: "{{ directories }}"
+  
+- name: Copy text files with nested variables
+  template:
+    src: test.txt.j2
+    dest: "/home/{{ ansible_user }}/{{ item.key }}.txt"
+  with_dict: "{{ directories }}"
