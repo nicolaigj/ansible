@@ -1,4 +1,7 @@
 ---
+- name: Installs git with the latest version
+  apt: name=git state=latest
+
 - name: Installs Nginx with the latest version.
   apt: name=nginx-full state=latest
   
