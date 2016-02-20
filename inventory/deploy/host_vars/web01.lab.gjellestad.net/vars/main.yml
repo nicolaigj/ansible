@@ -7,5 +7,5 @@ directories:
     
 sites:
   gjellestad.net:
-    site: gjellestad.net
+    site: web01.lab.gjellestad.net
     repo: https://github.com/nicolaigj/gjellestad.git
