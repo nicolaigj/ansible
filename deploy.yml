@@ -5,3 +5,9 @@
    roles:
     - users
     - upgrade
+
+ - name: Run role nginx on webservers
+   hosts: webservers
+   become: yes
+   roles:
+    - webserver
