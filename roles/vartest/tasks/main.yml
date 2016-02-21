@@ -7,4 +7,3 @@
   template:
     src: test.txt.j2
     dest: "/home/{{ ansible_user }}/test.txt"
-  with_dict: "{{ directories }}"
