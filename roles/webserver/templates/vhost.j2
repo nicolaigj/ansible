@@ -1,5 +1,5 @@
 server {
-    listen item.site.listen;
+    listen {{ item.site.listen }};
     listen [::]:80;
     server_name {{ item.site.server_name }};
 
