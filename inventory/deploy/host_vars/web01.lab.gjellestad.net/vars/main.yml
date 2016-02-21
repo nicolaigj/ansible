@@ -6,7 +6,8 @@ directories:
     name: test22
     
 sites:
-  gjellestad.net:
-    name: gjellestad.net
-    repo: https://github.com/nicolaigj/gjellestad.git
-    server_name: "www.web01.lab.gjellestad.net web01.lab.gjellestad.net"
+  - gjellestad.net: {
+    name: gjellestad.net,
+    repo: https://github.com/nicolaigj/gjellestad.git,
+    server_name: "www.web01.lab.gjellestad.net web01.lab.gjellestad.net",
+  }

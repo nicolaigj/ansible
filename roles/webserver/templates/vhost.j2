@@ -1,10 +1,10 @@
-{% for vhost in sites %}
+{% for site in sites %}
 server {
     listen 80;
     listen [::]:80;
-    server_name {{ vhost.server_name }};
+    server_name {{ site.server_name }};
 
-    root /usr/share/nginx/{{ vhost.name }};
+    root /usr/share/nginx/{{ site.name }};
 
     index index.html index.htm;
     
