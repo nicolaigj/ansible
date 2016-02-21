@@ -5,7 +5,7 @@ directories:
   test2:
     name: test22
     
-#sites:
-#  gjellestad.net:
-#    site: web01.lab.gjellestad.net
-#    repo: https://github.com/nicolaigj/gjellestad.git
+sites:
+  gjellestad.net:
+    site: web01.lab.gjellestad.net
+    repo: https://github.com/nicolaigj/gjellestad.git
