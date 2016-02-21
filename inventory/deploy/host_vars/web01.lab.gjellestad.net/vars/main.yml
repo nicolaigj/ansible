@@ -6,8 +6,12 @@ directories:
     name: test22
     
 sites:
-  - gjellestad.net: {
+ - gjellestad.net: {
     name: gjellestad.net,
     repo: "https://github.com/nicolaigj/gjellestad.git",
     server_name: "www.web01.lab.gjellestad.net web01.lab.gjellestad.net",
   }
+  
+employees:
+ - test1: {name: TestName1, job: TestJob1}
+ - test2: {name: TestName2, job: TestJob2}

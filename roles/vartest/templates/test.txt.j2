@@ -1,1 +1,5 @@
-Directory: {{ item.value.name }}
+{% for e in employees %}
+Name: {{ e.name }}
+Job: {{ e.job }}
+
+{% endfor %}
