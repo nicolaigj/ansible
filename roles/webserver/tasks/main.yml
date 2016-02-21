@@ -9,10 +9,9 @@
   template:
     src: vhost.j2
     dest: /etc/nginx/sites-enabled/vhost
-  with_dict: "{{ sites }}"
   
 - name: Pull site from git
   git:
     repo={{ item.value.repo }}
-    dest=/usr/share/nginx/{{ item.value.site }}
+    dest=/usr/share/nginx/{{ item.value.name }}
   with_dict: "{{ sites }}"
