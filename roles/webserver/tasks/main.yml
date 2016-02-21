@@ -8,7 +8,7 @@
 - name: Deploy virtual host config to sites enabled
   template:
     src: vhost.j2
-    dest: /etc/nginx/sites-enabled/{{ item.value.site }}
+    dest: /etc/nginx/sites-enabled/vhost
   with_dict: "{{ sites }}"
   
 - name: Pull site from git

@@ -1,6 +1,7 @@
+{% for item in sites %}
 server {
-    listen 80 default_server;
-    listen [::]:80 default_server ipv6only=on;
+    listen 80;
+    listen [::]:80;
     server_name {{ item.value.site }};
 
     root /usr/share/nginx/{{ item.value.site }};
@@ -15,3 +16,5 @@ server {
                 # include /etc/nginx/naxsi.rules
         }
 }
+
+{% endfor %}
